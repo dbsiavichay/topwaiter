@@ -1,4 +1,132 @@
 //imports
 @import 'normalize.styl'
+@import 'icons.styl'
+
+//Colores
+blue-dark = #158CBA
+blue-light = #75D2F4
+blue-light-border = #5FC1E8
+gray-background = #FAFAFA
+gray-border-light = #E2E2E2
+gray-light = #EEEEEE
+green-header = #5CB85C
+white-dark = rgba(white, 0.8)
+
+//Tags
+body
+	background-color gray-background
+
+//Clases
+.button
+	background-color gray-light
+	border 1px solid gray-border-light
+	border-radius 5px
+	border-width 0px 1px 4px 1px
+	color rgba(black, 0.6)
+	display inline-block
+	font-size 24px
+	font-weight 700	
+	margin 0 3px 5px 3px
+	padding 0.3em
+	text-transform uppercase
+	vertical-align top
+	&:hover
+		border-width 0px 1px 3px 1px
+		margin-top 1px		
+.button-blue-light
+	background-color blue-light
+	border-color blue-light-border
+	color white-dark
+.button-menu	
+	height 70px		
+	position absolute
+	right 0
+	top 0
+	& a
+		color white
+		display block
+		font-size 1.5em		
+		height 100%
+		line-height 70px
+		padding 0 10px
+.button-plus	
+	position absolute
+	left 0	
+	bottom 0
+	font-size 1em		
+	padding: 0.3em 0.3em 0.2em 0.3em
+.header
+	background-color green-header	
+	position relative
+.header-title
+	color white	
+	display inline-block
+	font-size 1.5em
+	height 70px
+	line-height 70px
+	margin 0 0.9em	
+.logo
+	border 3px solid white
+	border-radius 50%
+	box-sizing border-box
+	height 60px
+	position absolute
+	right 35px	
+	top 5px 
+	width 60px
+	overflow hidden
+	& img
+		width 100%
+		height 100%
+.orders
+	position relative
+	line-height 30px
+.order
+	display inline-block
+	max-width 288px
+	min-width 288px
+.order-buttons
+	font-size 0
+	text-align center	
+.order-options
+	display inline-block
+	border-right 1px solid gray-border-light
+	padding-right 0.2em
+.order-value
+	display inline-block
+	font-size 1.7em	
+	margin 0 0.1em	
+	vertical-align text-top
+	&:before
+		content "$"
+.panel
+	background-color white
+	border 1px solid gray-border-light
+	border-radius 3px
+	border-width: 0 1px 4px 1px;	
+	margin-bottom 20px
+.panel-header
+	background-color blue-dark
+	padding 0.2em 0.5em
+	text-align center		
+.panel-title
+	color  white
+	display inline-block
+	margin 0
+	text-transform uppercase	
+.panel-content
+	padding 1em
+	text-align center
+.select
+	font-size 1em
+	& option		
+		background-color white
+		color rgba(black, 0.6)		
+	&:focus		
+		outline none	
+
+	
+	
+		
 
 
