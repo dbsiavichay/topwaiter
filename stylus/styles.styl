@@ -83,8 +83,9 @@ body
 	line-height 30px
 .order
 	display inline-block
-	max-width 288px
-	min-width 288px
+	width 98%
+	min-width 282px
+	box-sizing border-box
 .order-buttons
 	font-size 0
 	text-align center	
@@ -92,19 +93,22 @@ body
 	display inline-block
 	border-right 1px solid gray-border-light
 	padding-right 0.2em
+	width 70%
 .order-value
 	display inline-block
 	font-size 1.7em	
 	margin 0 0.1em	
 	vertical-align text-top
+	width 20%
 	&:before
 		content "$"
 .panel
 	background-color white
 	border 1px solid gray-border-light
-	border-radius 3px
+	border-radius 0.2em
 	border-width: 0 1px 4px 1px;	
-	margin-bottom 20px
+	margin 0 3px 1.2em 3px
+	
 .panel-header
 	background-color blue-dark
 	padding 0.2em 0.5em
@@ -125,6 +129,9 @@ body
 	&:focus		
 		outline none	
 
+@media screen and (min-width: 640px)
+	.order
+		width auto
 	
 	
 		
